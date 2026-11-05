@@ -25,3 +25,47 @@ I needed help opening the integrated terminal in VS Code and running my Python s
 ### Next session
 Practice Python arithmetic and operators, then continue with the fundamentals.
 
+## Day 2 — Python Input and Type Conversion
+
+**Status:** Completed
+
+### What I learned
+
+Today I learned how to receive user input in Python and convert that input into different data types.
+
+1. **`input()`** — collects information from the user. Everything received through `input()` is initially a string (`str`), even when the user enters a number.
+2. **`int()`** — converts suitable values into integers (whole numbers).
+3. **`float()`** — converts suitable values into floating-point numbers (decimal numbers).
+4. **`str()`** — converts values into strings, allowing numbers to be handled as text.
+5. **`type()`** — checks the data type of a value.
+6. **f-strings** — allow variables to be inserted into formatted text.
+
+### Practical work
+
+Built a Python program that:
+- Asks for the user's name.
+- Collects their age and converts it to an integer.
+- Collects their height and converts it to a float.
+- Displays the information using f-strings.
+- Checks the resulting data types using `type()`.
+
+### What I understood
+
+Python does not automatically interpret information entered through `input()` as numbers. It initially treats everything as text.
+
+When we need to perform numerical operations, we must convert the input into the appropriate data type.
+
+I also learned that converting a number into a string is useful when we need to combine numerical values with text.
+
+### Assessment
+
+- Practical exercise: Passed.
+- Integer conversion: Understood.
+- Float conversion: Understood.
+- String conversion: Practised; purpose needs a little more reinforcement.
+
+### Key takeaway
+
+Getting the correct output isn't enough. Understanding the data type you're working with is equally important.
+
+**Next:** Day 3 — continue Python foundations.

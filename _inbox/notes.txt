@@ -1,0 +1,91 @@
+# VARIABLES
+my_name = "Shafii"
+my_age = 28
+
+# DATA TYPES
+# str = text, int = whole number, float = decimal, bool = True/False
+
+# F-STRINGS
+print(f"{my_name} is {my_age} years old")
+
+# LISTS
+trades = [50, 80, 120, 200, 45]
+
+# LIST METHODS
+trades.append(300)     # adds item
+trades.remove(80)      # removes item
+trades.sort()          # sorts lowest to highest
+len(trades)            # counts items
+
+# CONDITIONALS
+if profit > 200:
+    print("Excellent trade!")
+elif profit > 100:
+    print("Good trade!")
+else:
+    print("Loss!")
+
+# LOOPS
+for trade in trades:
+    print(trade)
+
+    trades = [50, 80, 120, 200, 45]
+print(trades)
+print(trades[0])
+print(trades[2])
+print(len(trades))
+
+trades = [50, 80, 120, 200, 45]
+
+# Add a new trade
+trades.append(300)
+print(trades)
+
+# Remove a trade
+trades.remove(80)
+print(trades)
+
+# Sort trades from lowest to highest
+trades.sort()
+print(trades)
+
+trades = ["BTC", "BNB", "ZIL", "ADA", "ETH", "AVAX"]
+
+trades.append("SOL")
+print(trades)
+print(len(trades))
+
+profit = 50
+
+if profit > 100:
+    print("Good trade!")
+else:
+    print("Bad trade!")
+
+profit = -50
+
+if profit > 200:
+    print("Excellent trade!")
+elif profit > 100:
+    print("Good trade!")
+elif profit > 0:
+    print("Small win!")
+else:
+    print("Loss! Review this trade.")
+
+# Loops
+
+trades = [50, 80, 120, 200, 45]
+for trade in trades:
+    print(trade)
+
+    trades = [50, 80, 120, 200, 45]
+    for trade in trades:
+        if trade > 100:
+            print(f"{trade} was a good trade!")
+        else:
+            print(f"{trade} needs review")
+
+trades = ["BTC", "BNB", "ZIL", "ADA", "SOL"]
+for trade in trades:
+    print(f"{trade} is in my portfolio")
