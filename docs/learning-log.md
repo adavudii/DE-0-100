@@ -69,3 +69,63 @@ I also learned that converting a number into a string is useful when we need to 
 Getting the correct output isn't enough. Understanding the data type you're working with is equally important.
 
 **Next:** Day 3 — continue Python foundations.
+Day 3 — Strings: Indexing, Slicing, Immutability and Concatenation
+
+What I learned
+
+Today I learned how Python handles strings and how to manipulate them.
+
+1. String indexing
+
+* Positive indexing starts at 0.
+* Negative indexing starts at -1 from the last character.
+* Example: name[0] returns the first character, while name[-1] returns the last.
+
+2. String slicing
+
+Slicing allows me to extract sections of a string.
+
+Syntax: text[start:end:step]
+
+* The starting position is included.
+* The ending position is excluded.
+* The step determines how Python moves through the string.
+* name[::-1] reverses an entire string.
+
+3. String immutability
+
+Strings are immutable, meaning individual characters cannot be changed directly after a string is created.
+
+However, I can create a new string and reassign it to an existing variable.
+
+4. String concatenation
+
+Concatenation joins strings using the + operator.
+
+I also learned that Python does not automatically insert spaces between concatenated strings.
+
+5. F-strings
+
+F-strings allow variables and expressions to be inserted directly into strings using curly brackets {}.
+
+They are particularly useful when formatting text containing different data types.
+
+Practical application
+
+I built a simple customer record processor using:
+
+* Customer name extraction through slicing.
+* Customer ID extraction while preserving leading zeros.
+* Age and customer information formatting using f-strings.
+* Creation of an updated customer name without modifying the original string.
+
+Mistakes and discoveries
+
+* Python does not allow ordinary decimal integers to begin with leading zeros. Customer IDs should be treated as strings when their exact characters matter.
+* F-strings require curly brackets, not parentheses, to evaluate variables and expressions.
+* name[-3] returns one character, while name[-3:] returns the last three characters.
+* name[::-1] reverses the entire string.
+
+Key takeaway
+
+Today helped me understand not just how to manipulate strings, but why these operations matter when processing structured text such as customer records and identification numbers.
