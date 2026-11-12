@@ -129,3 +129,50 @@ Mistakes and discoveries
 Key takeaway
 
 Today helped me understand not just how to manipulate strings, but why these operations matter when processing structured text such as customer records and identification numbers.
+
+Day 4 — Python String Methods
+
+Topic: String manipulation and data cleaning.
+
+Concepts learned
+
+Today I learned how to manipulate and standardise strings using Python’s built-in string methods.
+
+* .lower() — converts a string to lowercase.
+* .upper() — converts a string to uppercase.
+* .strip() — removes whitespace from the beginning and end of a string.
+* .replace() — replaces specified characters or text with something else.
+* .split() — separates a string into a list.
+* .join() — combines list elements into a single string.
+* .title() — capitalises the first letter of each word.
+
+Important discoveries
+
+1. String methods return new strings; they do not modify the original string.
+2. String methods can be chained, for example: customer_email.strip().lower().
+3. .split() and .join() perform opposite operations.
+4. Cleaning data and correcting inaccurate data are two different things. We should not change customer information without evidence.
+
+Practical exercise: Customer data cleaning
+
+customer_name = " DANIEL JOHNSON "
+customer_email = " DANIEL.JOHNSON@GMAIL.COM"
+phone_parts = ["080", "123", "4567"]
+cleaned_name = customer_name.strip().title()
+cleaned_email = customer_email.strip().lower()
+cleaned_phone = "-".join(phone_parts)
+print(cleaned_name)
+print(cleaned_email)
+print(cleaned_phone)
+
+Output:
+
+Daniel Johnson
+daniel.johnson@gmail.com
+080-123-4567
+
+Real-world application
+
+These techniques are useful when cleaning customer records, standardising imported data, preparing information for comparison, and processing text from files or databases.
+
+Status: Day 4 completed.
