@@ -176,3 +176,57 @@ Real-world application
 These techniques are useful when cleaning customer records, standardising imported data, preparing information for comparison, and processing text from files or databases.
 
 Status: Day 4 completed.
+
+## Day 8 — Python Lists: Creating, Accessing and Modifying Elements
+
+**Topics covered:**
+- Creating lists using square brackets `[]`.
+- Accessing list elements using zero-based indexing.
+- Modifying existing list elements using their indexes.
+- Adding elements using `.append()`.
+- Removing elements by value using `.remove()`.
+- Removing elements by index using `.pop()`.
+- Understanding that `.pop()` without an index removes the last element.
+
+**Practical exercises:**
+
+Worked with a customer list:
+
+```python
+customers = ["Daniel", "Sarah", "Michael", "Grace"]
+```
+
+Practised:
+- Replacing `"Sarah"` with `"David"`.
+- Replacing `"Grace"` with `"Hafsa"`.
+- Adding `"Aisha"` using `.append()`.
+- Removing `"Aisha"` using `.remove()`.
+- Removing elements using `.pop()`.
+
+**Key understanding:**
+
+Lists allow multiple values to be stored in one variable. Unlike strings, lists are mutable, meaning their elements can be changed after creation.
+
+I also learned the difference between removing an element by its value (`.remove()`) and removing it by its position (`.pop()`).
+
+**Practical relevance:**
+
+Lists are useful for storing and manipulating collections of data, such as customer names, records and other datasets.
+
+### Day 9 — List Methods and Iteration
+
+**Topics covered:**
+- `.insert()` — adds an element at a specified index.
+- `.sort()` — arranges list elements in ascending order.
+- `.sort(reverse=True)` — arranges elements in descending order.
+- `.reverse()` — reverses the existing order of elements.
+- `for` loops — iterate through a list, processing one element at a time.
+- Combining `for` loops with `if` statements to filter values based on conditions.
+
+**Practical application:**
+
+Worked with customer lists, inserted new customers, sorted names, reversed list order, and used loops to process and display individual customer records.
+
+**Key takeaway:**
+
+A `for` loop allows Python to automatically process every item in a collection without writing separate instructions for each item.
